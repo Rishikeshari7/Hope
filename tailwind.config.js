@@ -11,6 +11,7 @@ export default {
         bluefive: "#d0efff",
         textbrown: "#3A1700",
         primary:"#009EFF",
+        primaryDark:"#058BDE",
         secondary: "#000",
       },
       keyframes: {
