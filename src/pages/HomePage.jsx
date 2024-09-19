@@ -7,6 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import CardSection from "../components/CardSection";
 import ImportantCharity from "../components/ImportantCharity";
 import { NavLink } from "react-router-dom";
+import AboutAndNumber from "../components/AboutAndNumber";
 
 const HomePage = () => {
   const ourNumber = [
@@ -41,9 +42,10 @@ const HomePage = () => {
               Empower donors to contribute with confidence, knowing their
               support is reaching genuine and impactful initiatives.
             </p>
-            <button className="bg-bluethree hover:bg-bluetwo text-white px-8 py-3 rounded-full font-medium ">
+            <NavLink to="/donate"><button className="bg-bluethree hover:bg-bluetwo text-white px-8 py-3 mt-5 rounded-full font-medium ">
               Make A Donation
-            </button>
+            </button></NavLink>
+            
           </div>
           {/* right */}
           <div className="relative inline-block md:flex ">
@@ -122,12 +124,15 @@ const HomePage = () => {
       {/* Section 2 */}
       <div className="flex flex-col w-full items-center xl:mt-20 gap-3 text-center">
         <p className="text-bluefour text-lg mt-5 font-semibold">OUR FEATURES</p>
-        <p className="text-textbrown font-extrabold text-xl mx-5 md:text-3xl xl:text-4xl">You can make a difference by supporting a <br/> charity that you care about. <br/></p>
+        <p className="text-textbrown font-medium text-xl mx-5 md:text-3xl font-[Rowdies] xl:text-4xl">You can make a difference by supporting a <br/> charity that you care about. <br/></p>
         {/* caterogory Card */}
         <CardSection/>
       </div>
-      {/* section3 */}
+      {/* Section 3 */}
       <ImportantCharity/>
+      {/* Section 4 */}
+      <AboutAndNumber/>
+     {/* Section 5 */}
     </div>
   );
 };

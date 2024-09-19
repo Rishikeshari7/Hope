@@ -49,8 +49,8 @@ const CardSection = () => {
             </div>
         ))
       }
-      <img className='absolute hidden sm:block top-5 -left-16 -z-10 scale-90' src={Oval} />
-      <img className='absolute hidden sm:block top-7 -left-16 -z-20' src={Path} />
+      <img className='absolute hidden sm:block top-5 -left-16 -z-10 scale-90' src={Oval} loading='lazy' />
+      <img className='absolute hidden sm:block top-7 -left-16 -z-20' src={Path} loading='lazy' />
     </div>
   )
 }
