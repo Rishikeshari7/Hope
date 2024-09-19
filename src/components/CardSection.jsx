@@ -37,13 +37,13 @@ const CardSection = () => {
     <div className='relative grid md:grid-cols-2 gap-10 m-5 mx-5 md:mx-20'>
       {
         caterogoryData.map(data=>(
-            <div className='max-w-[25rem]  bg-bluefive px-8 md:px-12 py-7 md:py-10 rounded-lg flex flex-col gap-3 justify-center items-start'>
+            <div key={data.id} className='max-w-[25rem]  bg-bluefive px-8 md:px-12 py-7 md:py-10 rounded-lg flex flex-col gap-3 justify-center items-start'>
             <div className='flex items-center gap-2'><img src={data.image}></img>
             <p className='text-primary font-semibold'>{data.title}</p>
             </div>
             
-            <div className='w-full bg-white h-[1.5px]'>
-                <div className='w-[20%] bg-black h-full' ></div>
+            <div className='w-full bg-white rounded-full h-[1.5px]'>
+                <div className='w-[20%] bg-black rounded-full h-full' ></div>
             </div>
             <p className=' text-textbrown'>{data.description}</p>
             </div>

@@ -11,6 +11,7 @@ import AboutPage from './pages/AboutPage'
 import ReportPage from './pages/ReportPage'
 import DonatePage from './pages/DonatePage'
 import ProfilePage from './pages/ProfilePage'
+import DonationItemPage from './pages/DonationItemPage'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/report-fraud' element={<ReportPage/>} ></Route>
         <Route path='/donate' element={<DonatePage/>} ></Route>
         <Route path='/profile' element={<ProfilePage/>} > </Route>
+        <Route path='/donate/:id' element={<DonationItemPage/>} ></Route>
       </Routes>
     </div>
   )

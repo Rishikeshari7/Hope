@@ -5,6 +5,8 @@ import Oval from "../assets/Oval.png";
 import Rectangle from "../assets/Rectangle.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import CardSection from "../components/CardSection";
+import ImportantCharity from "../components/ImportantCharity";
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   const ourNumber = [
@@ -30,7 +32,7 @@ const HomePage = () => {
       <div className="relative">
         <div className="relative animate-bgPulse  bg-bluefive flex flex-col md:flex-row  py-20 pb-28 gap-10 justify-around items-center">
           {/* left */}
-          <div className="ml-5 w-10/12 text-center md:text-left md:max-w-[30rem] space-y-5">
+          <div className="ml-5 z-20 w-10/12 text-center md:text-left md:max-w-[30rem] space-y-5">
             <h1 className="flex text-textbrown text-5xl font-[Rowdies]">
               Join us in creating a better world—because every action counts.
             </h1>
@@ -39,7 +41,7 @@ const HomePage = () => {
               Empower donors to contribute with confidence, knowing their
               support is reaching genuine and impactful initiatives.
             </p>
-            <button className="bg-bluefour text-white px-8 py-3 rounded-full font-medium ">
+            <button className="bg-bluethree hover:bg-bluetwo text-white px-8 py-3 rounded-full font-medium ">
               Make A Donation
             </button>
           </div>
@@ -62,22 +64,22 @@ const HomePage = () => {
             className="absolute size-28 -left-16 top-5 hidden sm:block"
             src={Oval}
           ></img>
-          <div className="absolute inset-0">
+          <div className="absolute -z-0 inset-0">
             <div className="absolute bg-[#BFE9FF] w-32 h-32 rounded-md opacity-50 top-10 animate-moveRight"></div>
             <div
-              className="absolute bg-[#BFE9FF] w-28 h-28 rounded-md opacity-50 top-20 animate-moveRight"
+              className="absolute -z-0 bg-[#BFE9FF] w-28 h-28 rounded-md opacity-50 top-20 animate-moveRight"
               style={{ animationDelay: "1s" }}
             ></div>
             <div
-              className="absolute bg-[#BFE9FF] w-36 h-36 rounded-md opacity-50 top-40 animate-moveRight"
+              className="absolute -z-0 bg-[#BFE9FF] w-36 h-36 rounded-md opacity-50 top-40 animate-moveRight"
               style={{ animationDelay: "2s" }}
             ></div>
             <div
-              className="absolute bg-[#BFE9FF] w-24 h-24 rounded-md opacity-50 top-60 animate-moveRight"
+              className="absolute -z-0 bg-[#BFE9FF] w-24 h-24 rounded-md opacity-50 top-60 animate-moveRight"
               style={{ animationDelay: "3s" }}
             ></div>
             <div
-              className="absolute bg-[#BFE9FF] w-40 h-40 rounded-md opacity-50 top-80 animate-moveRight"
+              className="absolute -z-0 bg-[#BFE9FF] w-40 h-40 rounded-md opacity-50 top-80 animate-moveRight"
               style={{ animationDelay: "4s" }}
             ></div>
           </div>
@@ -120,10 +122,12 @@ const HomePage = () => {
       {/* Section 2 */}
       <div className="flex flex-col w-full items-center xl:mt-20 gap-3 text-center">
         <p className="text-bluefour text-lg mt-5 font-semibold">OUR FEATURES</p>
-        <p className="text-textbrown font-extrabold text-xl mx-5 md:text-3xl xl:text-4xl">You can make a difference by supporting a <br/> charity that you care about <br/> Your donation can help to change lives.</p>
+        <p className="text-textbrown font-extrabold text-xl mx-5 md:text-3xl xl:text-4xl">You can make a difference by supporting a <br/> charity that you care about. <br/></p>
         {/* caterogory Card */}
         <CardSection/>
       </div>
+      {/* section3 */}
+      <ImportantCharity/>
     </div>
   );
 };
