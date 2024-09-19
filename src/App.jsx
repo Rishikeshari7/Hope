@@ -15,7 +15,7 @@ import ProfilePage from './pages/ProfilePage'
 function App() {
 
   return (
-    <div className='w-screen'>
+    <div className='max-w-screen'>
     <NavBar/>
       <Routes>
         <Route path='/' element={<HomePage/>} ></Route>

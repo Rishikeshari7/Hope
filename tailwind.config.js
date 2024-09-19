@@ -10,6 +10,7 @@ export default {
         bluefour: "#2a9df4",
         bluefive: "#d0efff",
         textbrown: "#3A1700",
+        primary:"#009EFF",
         secondary: "#000",
       },
       keyframes: {
