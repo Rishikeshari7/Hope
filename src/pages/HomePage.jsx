@@ -8,6 +8,9 @@ import CardSection from "../components/CardSection";
 import ImportantCharity from "../components/ImportantCharity";
 import { NavLink } from "react-router-dom";
 import AboutAndNumber from "../components/AboutAndNumber";
+import GallerySection from "../components/GallerySection";
+import JoinOurMission from "../components/JoinOurMission";
+import CharitySection from "../components/CharitySection";
 
 const HomePage = () => {
   const ourNumber = [
@@ -133,6 +136,12 @@ const HomePage = () => {
       {/* Section 4 */}
       <AboutAndNumber/>
      {/* Section 5 */}
+     <GallerySection/>
+     {/* Section6 */}
+     <JoinOurMission/>
+     {/* Section7 */}
+     <CharitySection/>
+
     </div>
   );
 };
